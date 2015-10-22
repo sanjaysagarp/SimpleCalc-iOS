@@ -21,12 +21,13 @@ class ViewController: UIViewController {
     }
     
     var num : String = ""
-    var prev : Int = 0
+    var prev : Double = 0
     var operand : String = ""
     var result : Bool = false
     var arrOperand = [String]()
-    var arrNum = [Int]()
-    var solution : Int = 0
+    var arrNum = [Double]()
+    var solution : Double = 0
+    var decimal : Bool = false
     
     @IBOutlet weak var displayText: UILabel!
     
@@ -38,7 +39,7 @@ class ViewController: UIViewController {
             arrOperand.append(sender.currentTitle!)
             num = ""
         } else {
-            arrNum.append(Int(num)!)
+            arrNum.append(Double(num)!)
             arrOperand.append(sender.currentTitle!)
             num = ""
         }
@@ -65,10 +66,10 @@ class ViewController: UIViewController {
 
     @IBAction func Calculate(sender: UIButton) {
         result = true
-        arrNum.append(Int(num)!)
+        arrNum.append(Double(num)!)
         solution = 0;
         if(arrOperand[arrOperand.count - 1 ] == "count") {
-            solution = arrNum.count
+            solution = Double(arrNum.count)
             arrNum = []
             arrOperand = []
         } else if arrOperand.count + 1 == arrNum.count {
@@ -106,13 +107,15 @@ class ViewController: UIViewController {
         if operand == "avg" {
             
             displayText.text = displayText.text! + " = " + String(round((Double(solution) / Double(arrNum.count)) * 100 / 100))
+        } else if arrNum.count > 1 && operand == "fact" {
+            displayText.text = displayText.text! + " = Err"
+        } else if (solution * 100) % 100 != 0{
+            displayText.text = displayText.text! + " = " + String(round(solution * 100) / 100)
         } else {
-            displayText.text = displayText.text! + " = " + String(solution)
+            displayText.text = displayText.text! + " = " + String(Int(round(solution)))
         }
         
-        if arrNum.count > 1 && operand == "fact" {
-            displayText.text = displayText.text! + " = Err"
-        }
+        
         
         arrNum = []
         arrOperand = []
@@ -125,7 +128,6 @@ class ViewController: UIViewController {
         num = ""
     }
     
-    // Need to implement extended operations
     @IBAction func ExtensionOperands(sender: UIButton) {
         if result {
             result = false
@@ -134,24 +136,29 @@ class ViewController: UIViewController {
             displayText.text = String(solution)
         }
         if(sender.currentTitle == "count") {
-            arrNum.append(Int(num)!)
+            arrNum.append(Double(num)!)
             arrOperand.append(sender.currentTitle!)
             num = ""
         } else if(sender.currentTitle == "avg") {
-            arrNum.append(Int(num)!)
+            arrNum.append(Double(num)!)
             arrOperand.append(sender.currentTitle!)
             num = ""
         } else if sender.currentTitle == "fact" {
             arrOperand.append(sender.currentTitle!)
-            NSLog(sender.currentTitle!)
         }
         displayText.text = displayText.text! + " \(sender.currentTitle!) "
         
         }
     
+    @IBAction func Decimal(sender: UIButton) {
+        if !num.containsString(".") {
+            num += "."
+            displayText.text = displayText.text! + sender.currentTitle!
+        }
+    }
 }
 
-func fact(num:Int) -> Int {
+func fact(num:Double) -> Double {
     if (num == 0) {
         return 1
     } else {
