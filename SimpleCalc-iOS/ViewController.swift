@@ -24,23 +24,36 @@ class ViewController: UIViewController {
     var prev : Int = 0
     var operand : String = ""
     var result : Bool = false
+    var arrOperand = [String]()
+    var arrNum = [Int]()
+    var solution : Int = 0
+    
     @IBOutlet weak var displayText: UILabel!
     
     @IBAction func Operand(sender: UIButton) {
-        prev = Int(num)! // could add on from prev
-        operand = sender.currentTitle!
-        displayText.text = displayText.text! + " \(operand) "
-        num = ""
+        if result {
+            result = false
+            displayText.text = String(solution)
+            arrNum.append(solution)
+            arrOperand.append(sender.currentTitle!)
+            num = ""
+        } else {
+            arrNum.append(Int(num)!)
+            arrOperand.append(sender.currentTitle!)
+            num = ""
+        }
+        displayText.text = displayText.text! + " \(sender.currentTitle!) "
+        
     }
     
     @IBAction func Number(sender: UIButton) {
-        //NSLog("The button pressed is \(sender.currentTitle!)")
         if result {
             result = false
             displayText.text = "0"
+            num = ""
         }
-        if (displayText != nil) {
-            if (Int(displayText.text!) != 0) { // need to handle 1 + 0123
+        if displayText != nil {
+            if Int(displayText.text!) != 0 {
                 num += sender.currentTitle!
                 displayText.text = displayText.text! + sender.currentTitle!
             } else {
@@ -52,27 +65,96 @@ class ViewController: UIViewController {
 
     @IBAction func Calculate(sender: UIButton) {
         result = true
-        var solution : Int = 0
-        if operand == "+" {
-            solution = prev + Int(num)!
-        } else if operand == "-" {
-            solution = prev - Int(num)!
-        } else if operand == "*" {
-            solution = prev * Int(num)!
-        } else if operand == "/" {
-            solution = prev / Int(num)!
-        } else if operand == "%" {
-            solution = prev % Int(num)!
+        arrNum.append(Int(num)!)
+        solution = 0;
+        if(arrOperand[arrOperand.count - 1 ] == "count") {
+            solution = arrNum.count
+            arrNum = []
+            arrOperand = []
+        } else if arrOperand.count + 1 == arrNum.count {
+            for var index = 0; index < arrOperand.count; index++ {
+                operand = arrOperand[index]
+                prev = arrNum[index]
+                if operand == "+" {
+                    solution += prev + arrNum[index + 1]
+                } else if operand == "-" {
+                    solution += prev - arrNum[index + 1]
+                } else if operand == "*" {
+                    if solution == 0 {
+                        solution = prev
+                    }
+                    solution *= arrNum[index + 1]
+                } else if operand == "/" {
+                    if solution == 0 {
+                        solution = prev
+                    }
+                    solution /= arrNum[index + 1]
+                } else if operand == "%" {
+                    if solution == 0 {
+                        solution = prev
+                    }
+                    solution %= arrNum[index + 1]
+                } else if operand == "avg" {
+                    solution += prev
+                }
+            }
+        } else if arrOperand[0] == "fact" {
+            if arrNum.count == 1 {
+                solution = fact(arrNum[0])
+            }
         }
-        displayText.text = displayText.text! + " = " + String(solution)
+        if operand == "avg" {
+            
+            displayText.text = displayText.text! + " = " + String(round((Double(solution) / Double(arrNum.count)) * 100 / 100))
+        } else {
+            displayText.text = displayText.text! + " = " + String(solution)
+        }
+        
+        if arrNum.count > 1 && operand == "fact" {
+            displayText.text = displayText.text! + " = Err"
+        }
+        
+        arrNum = []
+        arrOperand = []
     }
     
     @IBAction func Clear(sender: UIButton) {
-        result = false
+        arrNum = []
+        arrOperand = []
         displayText.text = "0"
+        num = ""
     }
     
     // Need to implement extended operations
+    @IBAction func ExtensionOperands(sender: UIButton) {
+        if result {
+            result = false
+            displayText.text = "0"
+            num = ""
+            displayText.text = String(solution)
+        }
+        if(sender.currentTitle == "count") {
+            arrNum.append(Int(num)!)
+            arrOperand.append(sender.currentTitle!)
+            num = ""
+        } else if(sender.currentTitle == "avg") {
+            arrNum.append(Int(num)!)
+            arrOperand.append(sender.currentTitle!)
+            num = ""
+        } else if sender.currentTitle == "fact" {
+            arrOperand.append(sender.currentTitle!)
+            NSLog(sender.currentTitle!)
+        }
+        displayText.text = displayText.text! + " \(sender.currentTitle!) "
+        
+        }
     
 }
 
+func fact(num:Int) -> Int {
+    if (num == 0) {
+        return 1
+    } else {
+        return num * fact(num-1)
+    }
+}
