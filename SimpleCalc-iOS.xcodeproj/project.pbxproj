@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54DF54DD1BD7F263001AE7EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF54DC1BD7F263001AE7EE /* AppDelegate.swift */; };
+		54DF54DF1BD7F263001AE7EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF54DE1BD7F263001AE7EE /* ViewController.swift */; };
+		54DF54E21BD7F263001AE7EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DF54E01BD7F263001AE7EE /* Main.storyboard */; };
+		54DF54E41BD7F263001AE7EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DF54E31BD7F263001AE7EE /* Assets.xcassets */; };
+		54DF54E71BD7F263001AE7EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DF54E51BD7F263001AE7EE /* LaunchScreen.storyboard */; };
+		54DF54F21BD7F263001AE7EE /* SimpleCalc_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF54F11BD7F263001AE7EE /* SimpleCalc_iOSTests.swift */; };
+		54DF54FD1BD7F263001AE7EE /* SimpleCalc_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF54FC1BD7F263001AE7EE /* SimpleCalc_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54DF54EE1BD7F263001AE7EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54DF54D11BD7F263001AE7EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DF54D81BD7F263001AE7EE;
+			remoteInfo = "SimpleCalc-iOS";
+		};
+		54DF54F91BD7F263001AE7EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54DF54D11BD7F263001AE7EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DF54D81BD7F263001AE7EE;
+			remoteInfo = "SimpleCalc-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54DF54D91BD7F263001AE7EE /* SimpleCalc-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleCalc-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DF54DC1BD7F263001AE7EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54DF54DE1BD7F263001AE7EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54DF54E11BD7F263001AE7EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54DF54E31BD7F263001AE7EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54DF54E61BD7F263001AE7EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54DF54E81BD7F263001AE7EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DF54ED1BD7F263001AE7EE /* SimpleCalc-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleCalc-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DF54F11BD7F263001AE7EE /* SimpleCalc_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalc_iOSTests.swift; sourceTree = "<group>"; };
+		54DF54F31BD7F263001AE7EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DF54F81BD7F263001AE7EE /* SimpleCalc-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleCalc-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DF54FC1BD7F263001AE7EE /* SimpleCalc_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalc_iOSUITests.swift; sourceTree = "<group>"; };
+		54DF54FE1BD7F263001AE7EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54DF54D61BD7F263001AE7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DF54EA1BD7F263001AE7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DF54F51BD7F263001AE7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54DF54D01BD7F263001AE7EE = {
+			isa = PBXGroup;
+			children = (
+				54DF54DB1BD7F263001AE7EE /* SimpleCalc-iOS */,
+				54DF54F01BD7F263001AE7EE /* SimpleCalc-iOSTests */,
+				54DF54FB1BD7F263001AE7EE /* SimpleCalc-iOSUITests */,
+				54DF54DA1BD7F263001AE7EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54DF54DA1BD7F263001AE7EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54DF54D91BD7F263001AE7EE /* SimpleCalc-iOS.app */,
+				54DF54ED1BD7F263001AE7EE /* SimpleCalc-iOSTests.xctest */,
+				54DF54F81BD7F263001AE7EE /* SimpleCalc-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54DF54DB1BD7F263001AE7EE /* SimpleCalc-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				54DF54DC1BD7F263001AE7EE /* AppDelegate.swift */,
+				54DF54DE1BD7F263001AE7EE /* ViewController.swift */,
+				54DF54E01BD7F263001AE7EE /* Main.storyboard */,
+				54DF54E31BD7F263001AE7EE /* Assets.xcassets */,
+				54DF54E51BD7F263001AE7EE /* LaunchScreen.storyboard */,
+				54DF54E81BD7F263001AE7EE /* Info.plist */,
+			);
+			path = "SimpleCalc-iOS";
+			sourceTree = "<group>";
+		};
+		54DF54F01BD7F263001AE7EE /* SimpleCalc-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				54DF54F11BD7F263001AE7EE /* SimpleCalc_iOSTests.swift */,
+				54DF54F31BD7F263001AE7EE /* Info.plist */,
+			);
+			path = "SimpleCalc-iOSTests";
+			sourceTree = "<group>";
+		};
+		54DF54FB1BD7F263001AE7EE /* SimpleCalc-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54DF54FC1BD7F263001AE7EE /* SimpleCalc_iOSUITests.swift */,
+				54DF54FE1BD7F263001AE7EE /* Info.plist */,
+			);
+			path = "SimpleCalc-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54DF54D81BD7F263001AE7EE /* SimpleCalc-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DF55011BD7F263001AE7EE /* Build configuration list for PBXNativeTarget "SimpleCalc-iOS" */;
+			buildPhases = (
+				54DF54D51BD7F263001AE7EE /* Sources */,
+				54DF54D61BD7F263001AE7EE /* Frameworks */,
+				54DF54D71BD7F263001AE7EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleCalc-iOS";
+			productName = "SimpleCalc-iOS";
+			productReference = 54DF54D91BD7F263001AE7EE /* SimpleCalc-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54DF54EC1BD7F263001AE7EE /* SimpleCalc-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DF55041BD7F263001AE7EE /* Build configuration list for PBXNativeTarget "SimpleCalc-iOSTests" */;
+			buildPhases = (
+				54DF54E91BD7F263001AE7EE /* Sources */,
+				54DF54EA1BD7F263001AE7EE /* Frameworks */,
+				54DF54EB1BD7F263001AE7EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54DF54EF1BD7F263001AE7EE /* PBXTargetDependency */,
+			);
+			name = "SimpleCalc-iOSTests";
+			productName = "SimpleCalc-iOSTests";
+			productReference = 54DF54ED1BD7F263001AE7EE /* SimpleCalc-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54DF54F71BD7F263001AE7EE /* SimpleCalc-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DF55071BD7F263001AE7EE /* Build configuration list for PBXNativeTarget "SimpleCalc-iOSUITests" */;
+			buildPhases = (
+				54DF54F41BD7F263001AE7EE /* Sources */,
+				54DF54F51BD7F263001AE7EE /* Frameworks */,
+				54DF54F61BD7F263001AE7EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54DF54FA1BD7F263001AE7EE /* PBXTargetDependency */,
+			);
+			name = "SimpleCalc-iOSUITests";
+			productName = "SimpleCalc-iOSUITests";
+			productReference = 54DF54F81BD7F263001AE7EE /* SimpleCalc-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54DF54D11BD7F263001AE7EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Sanjay Sagar";
+				TargetAttributes = {
+					54DF54D81BD7F263001AE7EE = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					54DF54EC1BD7F263001AE7EE = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 54DF54D81BD7F263001AE7EE;
+					};
+					54DF54F71BD7F263001AE7EE = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 54DF54D81BD7F263001AE7EE;
+					};
+				};
+			};
+			buildConfigurationList = 54DF54D41BD7F263001AE7EE /* Build configuration list for PBXProject "SimpleCalc-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54DF54D01BD7F263001AE7EE;
+			productRefGroup = 54DF54DA1BD7F263001AE7EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54DF54D81BD7F263001AE7EE /* SimpleCalc-iOS */,
+				54DF54EC1BD7F263001AE7EE /* SimpleCalc-iOSTests */,
+				54DF54F71BD7F263001AE7EE /* SimpleCalc-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54DF54D71BD7F263001AE7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DF54E71BD7F263001AE7EE /* LaunchScreen.storyboard in Resources */,
+				54DF54E41BD7F263001AE7EE /* Assets.xcassets in Resources */,
+				54DF54E21BD7F263001AE7EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DF54EB1BD7F263001AE7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DF54F61BD7F263001AE7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54DF54D51BD7F263001AE7EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DF54DF1BD7F263001AE7EE /* ViewController.swift in Sources */,
+				54DF54DD1BD7F263001AE7EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DF54E91BD7F263001AE7EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DF54F21BD7F263001AE7EE /* SimpleCalc_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DF54F41BD7F263001AE7EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DF54FD1BD7F263001AE7EE /* SimpleCalc_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54DF54EF1BD7F263001AE7EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54DF54D81BD7F263001AE7EE /* SimpleCalc-iOS */;
+			targetProxy = 54DF54EE1BD7F263001AE7EE /* PBXContainerItemProxy */;
+		};
+		54DF54FA1BD7F263001AE7EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54DF54D81BD7F263001AE7EE /* SimpleCalc-iOS */;
+			targetProxy = 54DF54F91BD7F263001AE7EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54DF54E01BD7F263001AE7EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54DF54E11BD7F263001AE7EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54DF54E51BD7F263001AE7EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54DF54E61BD7F263001AE7EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54DF54FF1BD7F263001AE7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54DF55001BD7F263001AE7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54DF55021BD7F263001AE7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SimpleCalc-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.sagas.SimpleCalc-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54DF55031BD7F263001AE7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SimpleCalc-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.sagas.SimpleCalc-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		54DF55051BD7F263001AE7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SimpleCalc-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.sagas.SimpleCalc-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleCalc-iOS.app/SimpleCalc-iOS";
+			};
+			name = Debug;
+		};
+		54DF55061BD7F263001AE7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SimpleCalc-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.sagas.SimpleCalc-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleCalc-iOS.app/SimpleCalc-iOS";
+			};
+			name = Release;
+		};
+		54DF55081BD7F263001AE7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SimpleCalc-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.sagas.SimpleCalc-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SimpleCalc-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		54DF55091BD7F263001AE7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SimpleCalc-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.sagas.SimpleCalc-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SimpleCalc-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54DF54D41BD7F263001AE7EE /* Build configuration list for PBXProject "SimpleCalc-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DF54FF1BD7F263001AE7EE /* Debug */,
+				54DF55001BD7F263001AE7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DF55011BD7F263001AE7EE /* Build configuration list for PBXNativeTarget "SimpleCalc-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DF55021BD7F263001AE7EE /* Debug */,
+				54DF55031BD7F263001AE7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54DF55041BD7F263001AE7EE /* Build configuration list for PBXNativeTarget "SimpleCalc-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DF55051BD7F263001AE7EE /* Debug */,
+				54DF55061BD7F263001AE7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54DF55071BD7F263001AE7EE /* Build configuration list for PBXNativeTarget "SimpleCalc-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DF55081BD7F263001AE7EE /* Debug */,
+				54DF55091BD7F263001AE7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54DF54D11BD7F263001AE7EE /* Project object */;
+}
